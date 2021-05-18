@@ -1,11 +1,6 @@
-
-
-import api from './../utils/api';
+import api from '../utils/api';
 import { setAlert } from './alert';
-import { 
-
-
-
+import {
   REGISTER_SUCCESS,
   REGISTER_FAIL,
   USER_LOADED,
@@ -80,8 +75,5 @@ export const login = (email, password) => async dispatch => {
   }
 };
 
-///LOGOUT /Clear Profile
-
-export const logout =() =>dispatch =>{
-    dispatch({ type:LOGOUT});
-}
+// Logout
+export const logout = () => ({ type: LOGOUT });
