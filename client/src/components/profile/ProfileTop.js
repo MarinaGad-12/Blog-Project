@@ -7,7 +7,7 @@ const ProfileTop = ({
     company,
     location,
     website,
-    // social,
+
     user: { name, avatar },
   },
 }) => {

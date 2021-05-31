@@ -46,7 +46,7 @@ const Navbar = ({ auth: { isAuthenticated }, logout }) => {
       <h1>
         <Link to="/">
           <i className="fas fa-code" />
-          Developers Blog
+          Developer Blog
         </Link>
       </h1>
       <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>

@@ -10,13 +10,8 @@ const initialState = {
   location: '',
   status: '',
   skills: '',
-  // githubusername: '',
+
   bio: '',
-  // twitter: '',
-  // facebook: '',
-  // linkedin: '',
-  // youtube: '',
-  // instagram: ''
 };
 
 const ProfileForm = ({
@@ -26,8 +21,6 @@ const ProfileForm = ({
   history,
 }) => {
   const [formData, setFormData] = useState(initialState);
-
-  // const [displaySocialInputs, toggleSocialInputs] = useState(false);
 
   useEffect(() => {
     if (!profile) getCurrentProfile();
@@ -51,13 +44,8 @@ const ProfileForm = ({
     location,
     status,
     skills,
-    // githubusername,
+
     bio,
-    // twitter,
-    // facebook,
-    // linkedin,
-    // youtube,
-    // instagram
   } = formData;
 
   const onChange = (e) =>
@@ -74,7 +62,7 @@ const ProfileForm = ({
       <p className="lead">
         <i className="fas fa-user" /> Add some changes to your profile
       </p>
-      <small>* = required field</small>
+
       <form className="form" onSubmit={onSubmit}>
         <div className="form-group">
           <select name="status" value={status} onChange={onChange}>
@@ -125,19 +113,19 @@ const ProfileForm = ({
             onChange={onChange}
           />
           <small className="form-text">
-            City & state suggested (eg. Boston, MA)
+            City & state suggested (eg. Cairo, Egypt)
           </small>
         </div>
         <div className="form-group">
           <input
             type="text"
-            placeholder="* Skills"
+            placeholder=" Skills"
             name="skills"
             value={skills}
             onChange={onChange}
           />
           <small className="form-text">
-            Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)
+            Please use comma separated values (eg. HTML,CSS,JavaScript)
           </small>
         </div>
 

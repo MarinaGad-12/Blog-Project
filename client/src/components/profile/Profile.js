@@ -10,6 +10,7 @@ import { getProfileById } from '../../actions/profile';
 const Profile = ({ getProfileById, profile: { profile }, auth, match }) => {
   useEffect(() => {
     getProfileById(match.params.id);
+    console.log(match.params.id);
   }, [getProfileById, match.params.id]);
 
   // const formData = new FormData();
